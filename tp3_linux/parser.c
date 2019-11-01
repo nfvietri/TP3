@@ -24,7 +24,6 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 						nombre,
 						horasTrabajadas,
 						sueldo);
-
 		if(r==4)
 		{
 			Employee* empAux = employee_new();
@@ -32,10 +31,9 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 			employee_setNombre(empAux,nombre);
 			employee_setHorasTrabajadas(empAux,atoi(horasTrabajadas));
 			employee_setSueldo(empAux,atoi(sueldo));
-
+			ll_add(pArrayListEmployee,empAux);
 
 		}
-
 
 	}
     return 1;

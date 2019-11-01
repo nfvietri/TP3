@@ -23,13 +23,13 @@ int main()
     int option = 1;
 
     LinkedList* listaEmpleados = ll_newLinkedList();
+    int cant;
 
     do{
         switch(option)
         {
             case 1:
                 controller_loadFromText("data.csv",listaEmpleados);
-
                 break;
         }
     }while(option != 10);
